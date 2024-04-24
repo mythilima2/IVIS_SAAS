@@ -91,7 +91,7 @@ public class Createcustomer_withcommonmethods {
         page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Create")).click();
         page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("close")).click();
         page.locator("(//input[@aria-label='Select row'])[2]").click();
-      //  page.getByRole(AriaRole.ROW, new Page.GetByRoleOptions().setName("Select row Custome3three Ivis_India_A DHFH76 Active 0 0 0 cctv 0")).getByRole(AriaRole.CHECKBOX, new Locator.GetByRoleOptions().setName("Select row")).check();
+        page.getByRole(AriaRole.ROW, new Page.GetByRoleOptions().setName("Select row Custome3three Ivis_India_A DHFH76 Active 0 0 0 cctv 0")).getByRole(AriaRole.CHECKBOX, new Locator.GetByRoleOptions().setName("Select row")).check();
     }
             }
 
