@@ -1,0 +1,30 @@
+package Ivisbasefile.Createcustomer;
+
+import com.microsoft.playwright.*;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+
+public class basepage {
+    public Playwright playwright;
+
+
+    public BrowserType firefox;
+
+    public Browser browser;
+    public Page page ;
+    @BeforeTest
+
+    public void setUp() {
+        playwright = Playwright.create();
+        firefox= playwright.firefox();
+        browser = firefox.launch(new BrowserType.LaunchOptions().setHeadless(false));
+        page=browser.newPage();
+        page.navigate("https://dev1-v2.iviscloud.net/");
+        page.setViewportSize(1920, 1080);
+
+        //page.evaluate("window.maximize()");
+
+
+
+    }
+}
