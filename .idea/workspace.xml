@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4f58cb38-25f1-47fb-b928-ac0598ac3bfa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/CreateProject_usingcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/CreateProject_usingcommonmethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Createcustomer_withcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Createcustomer_withcommonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/CustomersCreation_CM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/EditCustomer_commonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/EditCustomer_commonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/basepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/basepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomerWithCommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomerWithCommonMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

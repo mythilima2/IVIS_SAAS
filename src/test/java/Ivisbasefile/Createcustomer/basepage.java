@@ -19,7 +19,7 @@ public class basepage {
         firefox= playwright.firefox();
         browser = firefox.launch(new BrowserType.LaunchOptions().setHeadless(false));
         page=browser.newPage();
-        page.navigate("https://dev1-v2.iviscloud.net/");
+        page.navigate("https://dev1-v2.iviscloud.net");
         page.setViewportSize(1920, 1080);
 
         //page.evaluate("window.maximize()");

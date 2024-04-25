@@ -14,15 +14,10 @@ public class EditCustomer_commonmethods {
     }
 
     public void edit(String editcode) {
-
-       //commonMethods.click(page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Create Customer$"))).locator("path"));
-        page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Customers")).click();
-        page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Ford")).click();
+        page.locator("//span[text()='Cs80m']").click();
         page.getByText("Edit").click();
         page.getByPlaceholder("Lead Number").click();
-        commonMethods.fill(page.getByPlaceholder("Lead Number"),editcode);//fill("77877");
-       // page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("SAVE")).click();
-       // page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("SAVE")).click();
+        commonMethods.fill(page.getByPlaceholder("Lead Number"),editcode);
         page.locator("text=SAVE").click();
         page.waitForTimeout(50000);
 

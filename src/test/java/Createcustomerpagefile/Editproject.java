@@ -12,7 +12,7 @@ public class Editproject {
     private final Actions commonMethods;
 
 
-    public Editproject(Page page) {
+    public Editproject(Page page) {git
         this.page = page;
         this.commonMethods = new Actions(page);
     }

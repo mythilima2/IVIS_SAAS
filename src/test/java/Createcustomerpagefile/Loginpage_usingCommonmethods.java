@@ -14,7 +14,6 @@ public class Loginpage_usingCommonmethods {
     }
 
 
-
     public void login(String username, String password) {
         commonMethods.fill(page.getByPlaceholder("Email or Username"), username);
         commonMethods.fill(page.locator("#password"), password);

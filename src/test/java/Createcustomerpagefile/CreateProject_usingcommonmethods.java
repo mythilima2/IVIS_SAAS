@@ -19,9 +19,6 @@ public class CreateProject_usingcommonmethods {
 
 
     public void create(){
-
-
-
                 page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Ford$"))).locator("path").click();
                 page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Projects")).click();
                 page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Projects$"))).locator("svg").nth(3).click();
