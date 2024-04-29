@@ -6,6 +6,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import org.testng.Assert;
 
+
 import java.util.regex.Pattern;
 
 public class Createcustomer_withcommonmethods {
@@ -17,7 +18,7 @@ public class Createcustomer_withcommonmethods {
         this.commonMethods = new Actions(page);
     }
 
-        public void createCustomer(String customerName, String customerCode, String country, String industry, String email) {
+    public void createCustomer(String customerName, String customerCode, String country, String industry, String email) {
         page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Customers$"))).locator("svg").nth(2).click();
         commonMethods.click(page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Next")));
         String customernamevalidation = page.locator("'Please enter the Customer Name'").textContent();
@@ -31,10 +32,7 @@ public class Createcustomer_withcommonmethods {
 
         Assert.assertEquals("Please enter the Customer Code", customercodenamevalidation);
         System.out.println(customercodenamevalidation);
-
-
         commonMethods.fill(page.getByPlaceholder("Customer Name"), customerName);
-
         commonMethods.click(page.getByPlaceholder("Country"));
         commonMethods.click(page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(country)));
         commonMethods.fill(page.getByPlaceholder("Customer Code"), customerCode);
@@ -70,13 +68,6 @@ public class Createcustomer_withcommonmethods {
         page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("close")).click();
     }
 
-        public void status(){
-       page.locator("(//input[@aria-label='Select row'])[2]").click();
-            page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Customers$"))).locator("svg").nth(1).click();
-            page.getByLabel("Accept and continue").check();
-            page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("No")).click();
-                   // page.getByRole(AriaRole.ROW, new Page.GetByRoleOptions().setName("Select row Custome3three Ivis_India_A DHFH76 Active 0 0 0 cctv 0")).getByRole(AriaRole.CHECKBOX, new Locator.GetByRoleOptions().setName("Select row")).check();
-    }
-            }
+}
 
 

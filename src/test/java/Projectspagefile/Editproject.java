@@ -1,4 +1,4 @@
-package Createcustomerpagefile;
+package Projectspagefile;
 
 import CommonMethods.Actions;
 import com.microsoft.playwright.Locator;
@@ -12,7 +12,7 @@ public class Editproject {
     private final Actions commonMethods;
 
 
-    public Editproject(Page page) {git
+    public Editproject(Page page) {
         this.page = page;
         this.commonMethods = new Actions(page);
     }

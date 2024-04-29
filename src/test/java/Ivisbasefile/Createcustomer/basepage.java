@@ -4,6 +4,8 @@ import com.microsoft.playwright.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
+import java.nio.file.Paths;
+
 public class basepage {
     public Playwright playwright;
 
@@ -19,8 +21,19 @@ public class basepage {
         firefox= playwright.firefox();
         browser = firefox.launch(new BrowserType.LaunchOptions().setHeadless(false));
         page=browser.newPage();
+        BrowserContext context=browser.newContext();
+        context.tracing().start(
+                new Tracing.StartOptions()
+                        .setScreenshots(true)
+                        .setSnapshots(true)
+                        .setSources(true)
+        );
         page.navigate("https://dev1-v2.iviscloud.net");
         page.setViewportSize(1920, 1080);
+        context.tracing().stop(
+                new Tracing.StopOptions()
+                        .setPath(Paths.get("saas.zip")));
+        //playwright.close();
 
         //page.evaluate("window.maximize()");
 

@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4f58cb38-25f1-47fb-b928-ac0598ac3bfa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/CreateProject_usingcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/CreateProject_usingcommonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/CreateProject_usingcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Projectspagefile/CreateProject_usingcommonmethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Createcustomer_withcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Createcustomer_withcommonmethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/CustomersCreation_CM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/EditCustomer_commonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/EditCustomer_commonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Editproject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Projectspagefile/Editproject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/basepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/basepage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomerWithCommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomerWithCommonMethods.java" afterDir="false" />
     </list>
@@ -30,6 +30,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Createcustomer_withcommonmethods.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -52,15 +53,12 @@
   }
 }</component>
   <component name="RunManager" selected="TestNG.CreateCustomerWithCommonMethods">
-    <configuration name="Projectcreation_Edit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ivispagefile.Projectcreation_Edit" />
+    <configuration name="C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Ivisseleniumpractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Ivispagefile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,10 +135,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CreateCustomerWithCommonMethods" />
+        <item itemvalue="TestNG.C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/testng.xml" />
         <item itemvalue="TestNG.CreateCustomerWithCommonMethods.create" />
         <item itemvalue="TestNG.CreateCustomer_withoutCommonmethods" />
         <item itemvalue="TestNG.CreateCustomerWithCommonMethods (1)" />
-        <item itemvalue="Application.Projectcreation_Edit" />
       </list>
     </recent_temporary>
   </component>
