@@ -1,4 +1,4 @@
-package Createcustomerpagefile;
+package SwitchModules;
 
 import CommonMethods.Actions;
 import com.microsoft.playwright.Locator;
@@ -20,5 +20,6 @@ public class Swiching_Module {
         page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Field Maintenance$"))).locator("svg").click();
         page.locator("'Customer-Site Mgmt'").click();
         page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Customers")).click();
+
     }
 }

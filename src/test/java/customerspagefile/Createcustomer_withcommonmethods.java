@@ -1,4 +1,4 @@
-package Createcustomerpagefile;
+package customerspagefile;
 
 import CommonMethods.Actions;
 import com.microsoft.playwright.Locator;
@@ -19,6 +19,7 @@ public class Createcustomer_withcommonmethods {
     }
 
     public void createCustomer(String customerName, String customerCode, String country, String industry, String email) {
+       // page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Customers")).click();
         page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Customers$"))).locator("svg").nth(2).click();
         commonMethods.click(page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Next")));
         String customernamevalidation = page.locator("'Please enter the Customer Name'").textContent();

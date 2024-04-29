@@ -1,7 +1,7 @@
 package Ivistestfile;
 
-import Createcustomerpagefile.Loginpage_withoutActions;
-import Createcustomerpagefile.CustomerCreation_withoutCommonmethods;
+import Loginpagefile.Loginpage_withoutActions;
+import customerspagefile.CustomerCreation_withoutCommonmethods;
 import Ivisbasefile.Createcustomer.basepage;
 import org.testng.annotations.Test;
 

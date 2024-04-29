@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f58cb38-25f1-47fb-b928-ac0598ac3bfa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/customerspagefile/EditCustomer_commonmethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/CreateProject_usingcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Projectspagefile/CreateProject_usingcommonmethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Createcustomer_withcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Createcustomer_withcommonmethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Editproject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Projectspagefile/Editproject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/basepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/basepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saas.zip" beforeDir="false" afterPath="$PROJECT_DIR$/saas.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Createcustomer_withcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/customerspagefile/Createcustomer_withcommonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/CustomerCreation_withoutCommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/customerspagefile/CustomerCreation_withoutCommonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/EditCustomer_commonmethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/FilteringCustomername.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/customerspagefile/FilteringCustomername.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Loginpage_usingCommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Loginpagefile/Loginpage_usingCommonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Loginpage_withoutActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Loginpagefile/Loginpage_withoutActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Swiching_Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SwitchModules/Swiching_Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomerWithCommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomerWithCommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomer_withoutCommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomer_withoutCommonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/Ivisseleniumpractice.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/Ivisseleniumpractice.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +36,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/Createcustomerpagefile/Createcustomer_withcommonmethods.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/customerspagefile/Createcustomer_withcommonmethods.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">

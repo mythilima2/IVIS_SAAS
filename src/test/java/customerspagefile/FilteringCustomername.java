@@ -1,4 +1,4 @@
-package Createcustomerpagefile;
+package customerspagefile;
 
 import CommonMethods.Actions;
 import com.microsoft.playwright.Locator;
