@@ -4,6 +4,7 @@ import CommonMethods.Actions;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
+import org.testng.Assert;
 
 import java.util.regex.Pattern;
 
@@ -18,12 +19,20 @@ public class Editproject {
     }
 
     public void editproject() {
-        page.locator("//span[text()='fhdyuyygf']").click();
-       // page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("fhdyuyygf")).click();
+        page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Test project")).first().click();
         page.getByText("Edit").click();
         page.locator("#projectName").click();
-        page.locator("#projectName").fill("fhdyuyygfok");
+        page.locator("#projectName").fill("");
+
+        String projectnamevalidation = page.locator("'Please enter valid  Project Name'").textContent();
+        Assert.assertEquals("Please enter valid  Project Name", projectnamevalidation);
+        System.out.println(projectnamevalidation);
+        page.locator("#projectName").fill("Test automation");
+//        String projectnameUNIQUEvalidation = page.locator("'This project name is already taken'").textContent();
+//        Assert.assertEquals("This project name is already taken", projectnameUNIQUEvalidation);
+//        System.out.println(projectnameUNIQUEvalidation);
+        page.locator("#projectName").fill("Testautomate");
         page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("SAVE")).click();
-        page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^fhdyuyygfok$"))).locator("svg").click();
+
     }
 }

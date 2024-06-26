@@ -18,10 +18,6 @@ CustomerCreation_withoutCommonmethods customerMgmtPage;
                   public void create(){
             customerMgmtPage=new CustomerCreation_withoutCommonmethods(page);
             customerMgmtPage.navigateToCustomers();
-            customerMgmtPage.createCustomer("abc", "45454", "United States of America", "Automotive Industry", "bekkkkkkkk@gmail.com");
-
-            // Add assertions to verify successful customer creation (omitted for brevity)
-
-            //teardown();
+            customerMgmtPage.createCustomer("automation", "45454", "United States of America", "Automotive Industry", "bekkkkkkkk@gmail.com");
         }
     }

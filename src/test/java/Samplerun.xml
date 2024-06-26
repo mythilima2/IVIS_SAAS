@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true" name="chromium">
+        <parameter name="browserName" value="chromium">
+
+        </parameter>
+        <classes>
+<!--            <class name="Ivistestfile.CreateCustomerWithCommonMethods">-->
+<!--                <methods>-->
+
+<!--                    <include name="testCreateCustomer"/>-->
+<!--                    <include name="setSwitchmodule"/>-->
+<!--                    <include name="create"/>-->
+<!--                    <include name="editcustomer"/>-->
+<!--                    <include name="filtering"/>-->
+<!--                    <include name="setCustomeruniquevalidation"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="Ivistestfile.Projectstestfile_TestNG">
+                <methods>
+
+                    <include name="testCreateCustomer"/>
+                    <include name="setSwi   tchmodule"/>
+                    <include name="setCreateProject"/>
+                    <include name="setEditproject"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="webkit">
+        <parameter name="browserName" value="webkit">
+
+        </parameter>
+        <classes>
+<!--            <class name="Ivistestfile.CreateCustomerWithCommonMethods">-->
+<!--                <methods>-->
+
+<!--                    <include name="testCreateCustomer"/>-->
+<!--                    <include name="setSwitchmodule"/>-->
+<!--                    <include name="create"/>-->
+<!--                    <include name="editcustomer"/>-->
+<!--                    <include name="filtering"/>-->
+<!--                    <include name="setCustomeruniquevalidation"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="Ivistestfile.Projectstestfile_TestNG">
+                <methods>
+
+                    <include name="testCreateCustomer"/>
+                    <include name="setSwitchmodule"/>
+                    <include name="setCreateProject"/>
+                    <include name="setEditproject"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="firefox">
+        <parameter name="browserName" value="firefox">
+
+        </parameter>
+        <classes>
+<!--            <class name="Ivistestfile.CreateCustomerWithCommonMethods">-->
+<!--                <methods>-->
+
+<!--                    <include name="testCreateCustomer"/>-->
+<!--                    <include name="setSwitchmodule"/>-->
+<!--                    <include name="create"/>-->
+<!--                    <include name="editcustomer"/>-->
+<!--                    <include name="filtering"/>-->
+<!--                    <include name="setCustomeruniquevalidation"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="Ivistestfile.Projectstestfile_TestNG">
+                <methods>
+
+                    <include name="testCreateCustomer"/>
+                    <include name="setSwitchmodule"/>
+                    <include name="setCreateProject"/>
+                    <include name="setEditproject"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<!--    <test verbose="2" preserve-order="true" name="internetexplorer">-->
+<!--        <parameter name="browserName" value="internetexplorer">-->
+
+<!--        </parameter>-->
+<!--        <classes>-->
+<!--            <class name="Ivistestfile.CreateCustomerWithCommonMethods">-->
+<!--                <methods>-->
+
+<!--                    <include name="testCreateCustomer"/>-->
+<!--                    <include name="setSwitchmodule"/>-->
+<!--                    <include name="create"/>-->
+<!--                    <include name="editcustomer"/>-->
+<!--                    <include name="filtering"/>-->
+<!--                    <include name="setCustomeruniquevalidation"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="Ivistestfile.projectstestfile">-->
+<!--                <methods>-->
+
+<!--                    <include name="testCreateCustomer"/>-->
+<!--                    <include name="setSwitchmodule"/>-->
+<!--                    <include name="setCreateProject"/>-->
+<!--                    <include name="setEditproject"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

@@ -8,13 +8,12 @@ import java.nio.file.Paths;
 
 public class basepage {
     public Playwright playwright;
-
-
     public BrowserType firefox;
-
     public Browser browser;
     public Page page ;
+
     @BeforeTest
+
 
     public void setUp() {
         playwright = Playwright.create();
@@ -33,10 +32,7 @@ public class basepage {
         context.tracing().stop(
                 new Tracing.StopOptions()
                         .setPath(Paths.get("saas.zip")));
-        //playwright.close();
-
-        //page.evaluate("window.maximize()");
-
+        page.waitForTimeout(1000);
 
 
     }

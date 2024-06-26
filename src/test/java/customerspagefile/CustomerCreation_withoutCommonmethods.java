@@ -17,7 +17,6 @@ public class CustomerCreation_withoutCommonmethods {
         }
 
         public void createCustomer(String customerName, String customerCode, String country, String industry, String email) {
-            // Logic to handle click on specific customer based on name or other criteria
             // page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Customers$"))).locator("svg").nth(3).click();
             page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Field Maintenance$"))).locator("svg").click();
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Next")).click();
@@ -28,11 +27,9 @@ public class CustomerCreation_withoutCommonmethods {
             page.getByPlaceholder("Industry").click();
             page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(industry)).click();
             page.getByPlaceholder("Email").fill(email);
-
             page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Next")).click();
-            page.waitForTimeout(50000);
+            page.waitForTimeout(1000);
 
-            // Implement navigation and handling for subsequent steps (omitted for brevity)
         }
     }
 
