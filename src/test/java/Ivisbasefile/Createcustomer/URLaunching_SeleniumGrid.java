@@ -35,7 +35,7 @@ public class URLaunching_SeleniumGrid {
                     browserType = playwright.webkit();
                     break;
                 default:
-                    throw new IllegalArgumentException("Unsupported browser: " + browserName);
+                    throw new IllegalArgumentException("Unsupported browser  : " + browserName);
             }
 
             browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
