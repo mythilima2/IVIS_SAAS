@@ -8,18 +8,38 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saas.zip" beforeDir="false" afterPath="$PROJECT_DIR$/saas.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/basepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/basepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomerWithCommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomerWithCommonMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomer_withoutCommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomer_withoutCommonmethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/projectstestfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Ivistestfile/projectstestfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Projectspagefile/CreateProject_usingcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Projectspagefile/CreateProject_usingcommonmethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Projectspagefile/Editproject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Projectspagefile/Editproject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SwitchModules/Swiching_Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SwitchModules/Swiching_Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/customerspagefile/Createcustomer_withcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/customerspagefile/Createcustomer_withcommonmethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/customerspagefile/CustomerCreation_withoutCommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/customerspagefile/CustomerCreation_withoutCommonmethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/customerspagefile/EditCustomer_commonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/customerspagefile/EditCustomer_commonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CommonMethods/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/commonactions/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/Basepage_UsingSeleniumJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basefile/URL/launching/Dev1v2_URLlaunching_Using_SeleniumJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/URLaunching_SeleniumGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basefile/URL/launching/Dev2v2_URLlaunching_ParallelExecution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivisbasefile/Createcustomer/basepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basefile/URL/launching/Dev1v2_URLlaunching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/BasicpomLogin_UsingSeleniumjava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testfile/BasicpomLogin_UsingSeleniumjava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomerWithCommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testfile/CreateCustomerWithCommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/CreateCustomer_withoutCommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testfile/CreateCustomer_withoutCommonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/Credentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CSVdatareader/Credentials.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/Projectstestfile_TestNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testfile/Projectstestfile_TestNG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/Sitegrouptestfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testfile/Sitegrouptestfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/projectstestfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testfile/projectstestfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Ivistestfile/unitstestfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testfile/unitstestfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Loginpagefile/CSVreader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CSVdatareader/Login_Credentials_CSV_Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Loginpagefile/Login_UsingSeleniumJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/login/Login_UsingSeleniumJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Loginpagefile/Loginpage_usingCommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/login/Loginpage_usingCommonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Loginpagefile/Loginpage_withoutActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/login/Loginpage_withoutActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Projectspagefile/CreateProject_usingcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/projects/Project_Creation_using_Commonactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Projectspagefile/Editproject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/projects/Project_Edition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Projectspagefile/ProjectCreation_UsingSeleniumJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/projects/Project_Creation_Using_SeleniumJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Samplerun.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Samplerun.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SwitchModules/Swiching_Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/switchmodules/Swiching_Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiautomation/Base_api.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/customerspagefile/Createcustomer_withcommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/customers/Customer_Creation_using_Commonactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/customerspagefile/CustomerCreation_withoutCommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/customers/Customer_Creation_without_Commonactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/customerspagefile/Customeruniquevalidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/customers/Customer_Name_Unique_Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/customerspagefile/EditCustomer_commonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/customers/Customer_Edition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/customerspagefile/FilteringCustomername.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/customers/Filtering_Customer_and_Status_Changing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sitegroupspagefile/Sitegroup_Creation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/sitegroups/Sitegroup_Creation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unitspagefile/Unitscreation_csm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/units/Unit_Creation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Default Suite/Ivisseleniumpractice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/MyTestSuite/Customers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/MyTestSuite/PlaywrightTests.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +54,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/Loginpagefile/CSVreader.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/customerspagefile/Createcustomer_withcommonmethods.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/CSVdatareader/Login_Credentials_CSV_Reader.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/pagefile/customers/Customer_Creation_using_Commonactions.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -54,48 +79,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mythili Bekkam\IdeaProjects\Ivisseleniumpractice\src\test\java\CSVdatareader" />
       <recent name="C:\Users\Mythili Bekkam\IdeaProjects\Ivisseleniumpractice\src\test\java\Ivistestfile" />
       <recent name="C:\Users\Mythili Bekkam\IdeaProjects\Ivisseleniumpractice\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/src/test/java/Samplerun.xml">
-    <configuration name="BasicpomLogin_UsingSeleniumjava (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPortal_CustomersiteManagement_Playwright" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Ivistestfile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Ivistestfile" />
-      <option name="MAIN_CLASS_NAME" value="Ivistestfile.BasicpomLogin_UsingSeleniumjava" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.projectstestfile">
     <configuration name="BasicpomLogin_UsingSeleniumjava" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPortal_CustomersiteManagement_Playwright" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ivistestfile.*" />
+          <option name="PATTERN" value="testfile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Ivistestfile" />
-      <option name="MAIN_CLASS_NAME" value="Ivistestfile.BasicpomLogin_UsingSeleniumjava" />
+      <option name="MAIN_CLASS_NAME" value="testfile.BasicpomLogin_UsingSeleniumjava" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -123,16 +136,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateCustomerWithCommonMethods" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPortal_CustomersiteManagement_Playwright" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testfile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testfile" />
+      <option name="MAIN_CLASS_NAME" value="testfile.CreateCustomerWithCommonMethods" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="projectstestfile" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPortal_CustomersiteManagement_Playwright" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ivistestfile.*" />
+          <option name="PATTERN" value="testfile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Ivistestfile" />
-      <option name="MAIN_CLASS_NAME" value="Ivistestfile.projectstestfile" />
+      <option name="MAIN_CLASS_NAME" value="testfile.projectstestfile" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -142,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/src/test/java/Samplerun.xml" />
         <item itemvalue="TestNG.projectstestfile" />
-        <item itemvalue="TestNG.BasicpomLogin_UsingSeleniumjava (1)" />
-        <item itemvalue="TestNG.BasicpomLogin_UsingSeleniumjava" />
+        <item itemvalue="TestNG.CreateCustomerWithCommonMethods" />
         <item itemvalue="TestNG.C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/testng.xml" />
+        <item itemvalue="TestNG.C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/src/test/java/Samplerun.xml" />
+        <item itemvalue="TestNG.BasicpomLogin_UsingSeleniumjava (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +189,37 @@
       <option name="presentableId" value="Default" />
       <updated>1704261870093</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;sample&quot;">
+      <created>1719406238343</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719406238343</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;URL Changed&quot;">
+      <created>1719407198200</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719407198200</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;sample&quot;" />
+    <MESSAGE value="&quot;URL Changed&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;URL Changed&quot;" />
   </component>
 </project>
