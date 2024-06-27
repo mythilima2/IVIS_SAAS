@@ -6,7 +6,7 @@
 
         </parameter>
         <classes>
-<!--            <class name="Ivistestfile.CreateCustomerWithCommonMethods">-->
+<!--            <class name="testfile.CreateCustomerWithCommonMethods">-->
 <!--                <methods>-->
 
 <!--                    <include name="testCreateCustomer"/>-->
@@ -17,7 +17,7 @@
 <!--                    <include name="setCustomeruniquevalidation"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-            <class name="Ivistestfile.Projectstestfile_TestNG">
+            <class name="testfile.Projectstestfile_TestNG">
                 <methods>
 
                     <include name="testCreateCustomer"/>
@@ -33,7 +33,7 @@
 
         </parameter>
         <classes>
-<!--            <class name="Ivistestfile.CreateCustomerWithCommonMethods">-->
+<!--            <class name="testfile.CreateCustomerWithCommonMethods">-->
 <!--                <methods>-->
 
 <!--                    <include name="testCreateCustomer"/>-->
@@ -44,7 +44,7 @@
 <!--                    <include name="setCustomeruniquevalidation"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-            <class name="Ivistestfile.Projectstestfile_TestNG">
+            <class name="testfile.Projectstestfile_TestNG">
                 <methods>
 
                     <include name="testCreateCustomer"/>
@@ -60,7 +60,7 @@
 
         </parameter>
         <classes>
-<!--            <class name="Ivistestfile.CreateCustomerWithCommonMethods">-->
+<!--            <class name="testfile.CreateCustomerWithCommonMethods">-->
 <!--                <methods>-->
 
 <!--                    <include name="testCreateCustomer"/>-->
@@ -71,7 +71,7 @@
 <!--                    <include name="setCustomeruniquevalidation"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-            <class name="Ivistestfile.Projectstestfile_TestNG">
+            <class name="testfile.Projectstestfile_TestNG">
                 <methods>
 
                     <include name="testCreateCustomer"/>
@@ -87,7 +87,7 @@
 
 <!--        </parameter>-->
 <!--        <classes>-->
-<!--            <class name="Ivistestfile.CreateCustomerWithCommonMethods">-->
+<!--            <class name="testfile.CreateCustomerWithCommonMethods">-->
 <!--                <methods>-->
 
 <!--                    <include name="testCreateCustomer"/>-->
@@ -98,7 +98,7 @@
 <!--                    <include name="setCustomeruniquevalidation"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-<!--            <class name="Ivistestfile.projectstestfile">-->
+<!--            <class name="testfile.projectstestfile">-->
 <!--                <methods>-->
 
 <!--                    <include name="testCreateCustomer"/>-->
