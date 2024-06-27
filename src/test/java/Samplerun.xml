@@ -21,7 +21,7 @@
                 <methods>
 
                     <include name="testCreateCustomer"/>
-                    <include name="setSwi   tchmodule"/>
+                    <include name="setSwitchmodule"/>
                     <include name="setCreateProject"/>
                     <include name="setEditproject"/>
                 </methods>
