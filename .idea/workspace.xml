@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f58cb38-25f1-47fb-b928-ac0598ac3bfa" name="Changes" comment="">
+    <list default="true" id="4f58cb38-25f1-47fb-b928-ac0598ac3bfa" name="Changes" comment="Extra spaces removed">
+      <change afterPath="$PROJECT_DIR$/src/test/java/deliveryApi/deliveryApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Samplerun.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Samplerun.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,9 @@
     <setting file="file://$PROJECT_DIR$/src/test/java/Loginpagefile/CSVreader.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/customerspagefile/Createcustomer_withcommonmethods.java" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2aQruGwdZKY4PLb0KKv3NgtRVyL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,10 +46,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.deliveryApi.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Sub__Branch",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice"
   }
 }]]></component>
@@ -54,25 +61,21 @@
       <recent name="C:\Users\Mythili Bekkam\IdeaProjects\Ivisseleniumpractice\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/src/test/java/Samplerun.xml">
-    <configuration name="BasicpomLogin_UsingSeleniumjava (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPortal_CustomersiteManagement_Playwright" />
+  <component name="RunManager" selected="Application.deliveryApi">
+    <configuration name="deliveryApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="deliveryApi.deliveryApi" />
+      <module name="Ivisseleniumpractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ivistestfile.*" />
+          <option name="PATTERN" value="deliveryApi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Ivistestfile" />
-      <option name="MAIN_CLASS_NAME" value="Ivistestfile.BasicpomLogin_UsingSeleniumjava" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicpomLogin_UsingSeleniumjava" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BasicpomLogin_UsingSeleniumjava (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPortal_CustomersiteManagement_Playwright" />
       <extension name="coverage">
         <pattern>
@@ -128,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.deliveryApi" />
         <item itemvalue="TestNG.projectstestfile" />
         <item itemvalue="TestNG.C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/testng.xml" />
         <item itemvalue="TestNG.C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/src/test/java/Samplerun.xml" />
         <item itemvalue="TestNG.BasicpomLogin_UsingSeleniumjava (1)" />
-        <item itemvalue="TestNG.BasicpomLogin_UsingSeleniumjava" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +155,19 @@
       <option name="presentableId" value="Default" />
       <updated>1704261870093</updated>
     </task>
+    <task id="LOCAL-00001" summary="Extra spaces removed">
+      <option name="closed" value="true" />
+      <created>1719474676084</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719474676084</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Extra spaces removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extra spaces removed" />
   </component>
 </project>
