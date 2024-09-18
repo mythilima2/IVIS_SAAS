@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,7 +30,6 @@ public class deliveryAPI {
         Map<String, String> params = new HashMap<>();
         params.put("projectId", "452"); // Replace with your actual parameters
         //params.put("param2", "value2");
-
 
         try {
 
@@ -73,14 +73,26 @@ public class deliveryAPI {
                 }
                 in.close();
 
-                // Print the response
-                System.out.println("Response: " + response.toString());
+                // Print the response body
+                System.out.println("Response Body: " + response.toString());
             } else {
-                System.out.println("GET request failed");
+                System.out.println("Failed to get successful response. Server responded with: " + responseCode + " - " + responseMessage);
             }
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    // Utility method to encode parameters into a URL query string
+    public static String getParamsString(Map<String, String> params) throws Exception {
+        StringBuilder result = new StringBuilder();
+        for (Map.Entry<String, String> entry : params.entrySet()) {
+            result.append(URLEncoder.encode(entry.getKey(), "UTF-8"));
+            result.append("=");
+            result.append(URLEncoder.encode(entry.getValue(), "UTF-8"));
+            result.append("&");
+        }
+        String resultString = result.toString();
+        return resultString.length() > 0 ? resultString.substring(0, resultString.length() - 1) : resultString;
     }
 }
