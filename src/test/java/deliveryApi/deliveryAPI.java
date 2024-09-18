@@ -10,7 +10,7 @@ import java.util.Map;
 public class deliveryAPI {
 
     public static void main(String[] args) {
-        String url = "http://dev2-v2.iviscloud.net:8000/api/sitegroups/unmappedsitegrouplist"; // Replace with your API URL
+        String baseUrl = "http://dev2-v2.iviscloud.net:8000/api/sitegroups/unmappedsitegrouplist"; // Replace with your API URL
         String bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImd0eSI6WyJhdXRob3JpemF0aW9u" +
                                 "X2NvZGUiXSwia2lkIjoiMzE2YzBmZTU3In0.eyJhdWQiOiI5NGRlMTBlZC01NGZjLTQ2MjEtY" +
                                 "jBmNi0yZTJjOGRjOTBiNTUiLCJleHAiOjE3MjY3MTQ4NDMsImlhdCI6MTcyNjY3MTY0MywiaXNzI" +
@@ -25,9 +25,21 @@ public class deliveryAPI {
         headers.put("Tenant-Id", "1"); // Example header
         //headers.put("Custom-Header", "value"); // Replace with your custom headers if any
 
+        // Parameters to be passed in the URL
+        Map<String, String> params = new HashMap<>();
+        params.put("projectId", "452"); // Replace with your actual parameters
+        //params.put("param2", "value2");
+
+
         try {
+
+            // Construct the full URL with parameters
+            String fullUrl = baseUrl + "?" + getParamsString(params);
+            System.out.println("Full URL: " + fullUrl);
+
+
             // Create a URL object
-            URL obj = new URL(url);
+            URL obj = new URL(fullUrl);
             HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
 
             // Set the request method to GET
@@ -41,16 +53,14 @@ public class deliveryAPI {
                 connection.setRequestProperty(header.getKey(), header.getValue());
             }
 
-          /*
-          // Parameters to be passed in the URL
-            Map<String, String> params = new HashMap<>();
-            params.put("param1", "value1"); // Replace with your actual parameters
-            params.put("param2", "value2");
-            */
 
             // Get the response code
             int responseCode = connection.getResponseCode();
             System.out.println("Response Code: " + responseCode);
+
+            // Read the response message
+            String responseMessage = connection.getResponseMessage();
+            System.out.println("Response Message: " + responseMessage);
 
             // If the response code is 200, read the response
             if (responseCode == HttpURLConnection.HTTP_OK) {
