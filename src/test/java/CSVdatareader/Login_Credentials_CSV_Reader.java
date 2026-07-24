@@ -14,7 +14,7 @@ public class Login_Credentials_CSV_Reader {
     public  static CSVParser csvParser;
     public static List<String[]> readCredentialsFromCSV(String filePath) throws IOException {
         List<String[]> credentials = new ArrayList<>();
-        Reader reader = new FileReader("C:\\Users\\Mythili Bekkam\\IdeaProjects\\Ivisseleniumpractice\\src\\test\\java\\CSVdatareader\\Credentials.csv");
+        Reader reader = new FileReader("C://Users//MythiliB//IdeaProjects//IVIS_SAAS//src//test//java//CSVdatareader//Credentials.csv");
          csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader());
 
         for (CSVRecord csvRecord : csvParser) {

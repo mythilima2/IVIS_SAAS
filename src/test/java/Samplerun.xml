@@ -1,112 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="tests">
-    <test verbose="2" preserve-order="true" name="chromium">
-        <parameter name="browserName" value="chromium">
-
+<suite name="All Test Suite" parallel="tests" thread-count="3">
+    <test verbose="2" preserve-order="true" name="UAT-Chromium">
+        <parameter name="browser" value="chromium">
+                <parameter name="environment" value="uat"/>
         </parameter>
         <classes>
-<!--            <class name="testfile.CreateCustomerWithCommonMethods">-->
-<!--                <methods>-->
-
-<!--                    <include name="testCreateCustomer"/>-->
-<!--                    <include name="setSwitchmodule"/>-->
-<!--                    <include name="create"/>-->
-<!--                    <include name="editcustomer"/>-->
-<!--                    <include name="filtering"/>-->
-<!--                    <include name="setCustomeruniquevalidation"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-            <class name="testfile.Projectstestfile_TestNG">
+                <class name="testfile.Customer">
                 <methods>
-
-                    <include name="testCreateCustomer"/>
-                    <include name="setSwitchmodule"/>
-                    <include name="setCreateProject"/>
-                    <include name="setEditproject"/>
+                    <include name="getLoginCredentials"/>
+                    <include name="login"/>
+                    <include name="switchModule"/>
+                    <include name="createCustomer"/>
                 </methods>
             </class>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="webkit">
-        <parameter name="browserName" value="webkit">
+    <test verbose="2" preserve-order="true" name="POC-Chromium">
+        <parameter name="environment" value="poc"/>
+        <classes>
+            <class name="testfile.Customer">
+                <methods>
+                    <include name="getLoginCredentials"/>
+                    <include name="login"/>
+                    <include name="switchModule"/>
+                    <include name="createCustomer"/>
+                </methods>
+            </class>
+
+
+
+
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="UAT-webkit">
+        <parameter name="browser" value="webkit">
+            <parameter name="environment" value="uat"/>
+        </parameter>
+        <classes>
+
+            <class name="testfile.Customer">
+                <methods>
+                    <include name="getLoginCredentials"/>
+                    <include name="login"/>
+                    <include name="switchModule"/>
+                    <include name="createCustomer"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+    <test verbose="2" preserve-order="true" name="POC-webkit">
+        <parameter name="browser" value="webkit">
+            <parameter name="environment" value="poc"/>
+        </parameter>
+        <classes>
+
+            <class name="testfile.Customer">
+                <methods>
+                    <include name="getLoginCredentials"/>
+                    <include name="login"/>
+                    <include name="switchModule"/>
+                    <include name="createCustomer"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+    <test verbose="2" preserve-order="true" name="POC-firefox">
+        <parameter name="browser" value="firefox">
+            <parameter name="environment" value="poc"/>
 
         </parameter>
         <classes>
-<!--            <class name="testfile.CreateCustomerWithCommonMethods">-->
-<!--                <methods>-->
-
-<!--                    <include name="testCreateCustomer"/>-->
-<!--                    <include name="setSwitchmodule"/>-->
-<!--                    <include name="create"/>-->
-<!--                    <include name="editcustomer"/>-->
-<!--                    <include name="filtering"/>-->
-<!--                    <include name="setCustomeruniquevalidation"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-            <class name="testfile.Projectstestfile_TestNG">
+          <class name="testfile.Customer">
                 <methods>
-
-                    <include name="testCreateCustomer"/>
-                    <include name="setSwitchmodule"/>
-                    <include name="setCreateProject"/>
-                    <include name="setEditproject"/>
+                    <include name="getLoginCredentials"/>
+                    <include name="login"/>
+                    <include name="switchModule"/>
+                    <include name="createCustomer"/>
                 </methods>
             </class>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="firefox">
-        <parameter name="browserName" value="firefox">
+    <test verbose="2" preserve-order="true" name="UAT-firefox">
+        <parameter name="browser" value="firefox">
+            <parameter name="environment" value="uat"/>
 
         </parameter>
         <classes>
-<!--            <class name="testfile.CreateCustomerWithCommonMethods">-->
-<!--                <methods>-->
-
-<!--                    <include name="testCreateCustomer"/>-->
-<!--                    <include name="setSwitchmodule"/>-->
-<!--                    <include name="create"/>-->
-<!--                    <include name="editcustomer"/>-->
-<!--                    <include name="filtering"/>-->
-<!--                    <include name="setCustomeruniquevalidation"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-            <class name="testfile.Projectstestfile_TestNG">
+            <class name="testfile.Customer">
                 <methods>
-
-                    <include name="testCreateCustomer"/>
-                    <include name="setSwitchmodule"/>
-                    <include name="setCreateProject"/>
-                    <include name="setEditproject"/>
+                    <include name="getLoginCredentials"/>
+                    <include name="login"/>
+                    <include name="switchModule"/>
+                    <include name="createCustomer"/>
                 </methods>
             </class>
         </classes>
     </test>
 <!--    <test verbose="2" preserve-order="true" name="internetexplorer">-->
-<!--        <parameter name="browserName" value="internetexplorer">-->
+<!--    <parameter name="browser" value="internetexplorer">-->
+<!--    <parameter name="environment" value="uat"/>-->
+<!--    </parameter><classes>-->
 
-<!--        </parameter>-->
-<!--        <classes>-->
-<!--            <class name="testfile.CreateCustomerWithCommonMethods">-->
-<!--                <methods>-->
-
-<!--                    <include name="testCreateCustomer"/>-->
-<!--                    <include name="setSwitchmodule"/>-->
-<!--                    <include name="create"/>-->
-<!--                    <include name="editcustomer"/>-->
-<!--                    <include name="filtering"/>-->
-<!--                    <include name="setCustomeruniquevalidation"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--            <class name="testfile.projectstestfile">-->
-<!--                <methods>-->
-
-<!--                    <include name="testCreateCustomer"/>-->
-<!--                    <include name="setSwitchmodule"/>-->
-<!--                    <include name="setCreateProject"/>-->
-<!--                    <include name="setEditproject"/>-->
-<!--                </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
+<!--    <class name="testfile.Customer">-->
+<!--        <methods>-->
+<!--            <include name="getLoginCredentials"/>-->
+<!--            <include name="login"/>-->
+<!--            <include name="switchModule"/>-->
+<!--            <include name="createCustomer"/>-->
+<!--        </methods>-->
+<!--    </class>-->
+<!--    </classes>-->
+<!--</test>-->
 </suite>

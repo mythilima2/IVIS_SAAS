@@ -26,7 +26,7 @@ public class Dev1v2_URLlaunching {
                         .setSnapshots(true)
                         .setSources(true)
         );
-        page.navigate("https://dev2-v2.iviscloud.net");
+        page.navigate("https://uat1.iviscloud.net/");
         page.setViewportSize(1920, 1080);
         context.tracing().stop(
                 new Tracing.StopOptions()

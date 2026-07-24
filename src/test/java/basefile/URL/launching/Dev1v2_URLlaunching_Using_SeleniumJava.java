@@ -53,7 +53,7 @@ public class Dev1v2_URLlaunching_Using_SeleniumJava {
                 driver = new ChromeDriver(options);
 
                 // Navigate to the URL
-                driver.get("https://dev1-v2.iviscloud.net");
+                driver.get("https://uat1.iviscloud.net/");
 
                 // Add additional configurations if needed
                 driver.manage().window().maximize();

@@ -16,11 +16,9 @@ public class Swiching_Module {
     }
 
     public void navigateToCustomers() {
-        page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^CRM$"))).locator("svg").click();
-
-       //page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Field Maintenance$"))).locator("svg").click();
+        page.getByText("Management", new Page.GetByTextOptions().setExact(true)).click();
         page.waitForTimeout(1000);
-        page.locator("'Customer-Site Mgmt'").click();
+        page.getByText("Config Mgmt").click();
 
     }
 }
