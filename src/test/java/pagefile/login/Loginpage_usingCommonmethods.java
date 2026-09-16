@@ -26,4 +26,18 @@ public class Loginpage_usingCommonmethods {
 
     }
 
+
+    public void logout() {
+
+        commonMethods.click(loginLocators.profileIcon);
+
+        commonMethods.click(loginLocators.logoutButton);
+
+        commonMethods.click(loginLocators.confirmLogoutButton);
+
+        commonMethods.waitForLoader();
+
+        System.out.println("Logout Successful");
+    }
+
 }

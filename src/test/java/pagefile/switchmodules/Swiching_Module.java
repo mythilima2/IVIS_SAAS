@@ -19,6 +19,11 @@ public class Swiching_Module {
         page.getByText("Management", new Page.GetByTextOptions().setExact(true)).click();
         page.waitForTimeout(1000);
         page.getByText("Config Mgmt").click();
+    }
 
+    public void navigateToMonitoring() {
+        page.getByText("Management", new Page.GetByTextOptions().setExact(true)).click();
+        page.waitForTimeout(1000);
+        page.getByText("Monitoring", new Page.GetByTextOptions().setExact(true)).first().click();
     }
 }

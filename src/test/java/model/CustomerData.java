@@ -4,6 +4,7 @@ public class CustomerData {
 
         private String customerName;
         private String legalName;
+        private String customerCode;
         private String country;
         private String industry;
         private String email;
@@ -19,6 +20,22 @@ public class CustomerData {
             this.country = country;
             this.industry = industry;
             this.email = email;
+            this.customerCode = legalName;  // Default to legalName if not specified
+        }
+
+        public CustomerData(String customerName,
+                            String legalName,
+                            String customerCode,
+                            String country,
+                            String industry,
+                            String email) {
+
+            this.customerName = customerName;
+            this.legalName = legalName;
+            this.customerCode = customerCode;
+            this.country = country;
+            this.industry = industry;
+            this.email = email;
         }
 
         public String getCustomerName() {
@@ -27,6 +44,10 @@ public class CustomerData {
 
         public String getLegalName() {
             return legalName;
+        }
+
+        public String getCustomerCode() {
+            return customerCode;
         }
 
         public String getCountry() {

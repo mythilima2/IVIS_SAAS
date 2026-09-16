@@ -12,8 +12,7 @@ public class CustomersLocators {
         // Navigation
         //==========================
 
-        public final
-        Locator lnkCustomers;
+        public final Locator lnkCustomers;
         public final Locator btnAddCustomer;
 
         //==========================
@@ -35,16 +34,13 @@ public class CustomersLocators {
         //==========================
         // Buttons
         //==========================
-
         public final Locator btnNext;
         public final Locator btnCreate;
         public final Locator btnClose;
         public final Locator btnCancel;
-
         //==========================
         // Address Dropdowns
         //==========================
-
         public final Locator btnCountry;
         public final Locator btnState;
         public final Locator btnCity;
@@ -92,8 +88,15 @@ public class CustomersLocators {
         public final Locator optionCalifornia;
         public final Locator optionATM;
         public final Locator optionB2B;
+       // public final Locator customerphonenumber;
+     public final Locator btnEdit;
+    public final Locator btnUpdate;
+    public final Locator edittabclose;
+    public final Locator customerDescription;
+    public final Locator btnDelete;
 
         public CustomersLocators(Page page) {
+            this.page = page;
 
             //=====================================
             // Navigation
@@ -264,7 +267,135 @@ public class CustomersLocators {
                             AriaRole.OPTION,
                             new Page.GetByRoleOptions()
                                     .setName("B2B"));
+            //=====================================
+            // Customer Table - Grid Columns & Cells
+            //=====================================
+
+            // Table header columns (sortable)
+            customerGridHeader = page.locator("thead");
+            customerGridRows = page.locator("tbody tr");
+
+            // Column headers with sort indicators
+            // Customer Name column (first column with sort arrow)
+            // Tenant Name column
+            // Customer Code column (with "LEGAL_*" format)
+            // Status column (shows "Active" in green)
+
+            //=====================================
+            // Search & Filter
+            //=====================================
+
+            // Main search bar at top right
+            searchInputField =             page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Contains")).first();
 
 
+
+            // Column filter inputs - "Contains" filters under each column
+            // These filter dropdowns appear below column headers
+
+            // No data message when results are empty
+            noDataMsg = page.getByText("No data");
+
+
+            //=====================================
+            // Edit & Status Actions (Row Actions)
+            //=====================================
+
+            // Edit button - appears as icon at end of row
+
+            btnEdit =       page.getByRole(AriaRole.CHECKBOX, new Page.GetByRoleOptions().setName("controlled"));
+
+            customerDescription =            page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Description"));
+            btnUpdate =       page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("SAVE"));
+
+
+
+
+            // Delete button - appears as icon at end of row
+            btnDelete =       page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("close"));
+            edittabclose =      page.locator(".svg-inline--fa.fa-xmark > path");
+
+
+            // Status badge showing "Active" in green
+          //  btnStatusActive = page.locator("text=Active").first();
+
+            // Status indicator for inactive
+           // btnStatusInactive = page.locator("text=Inactive").first();
+        }
+
+        //==========================
+        // Edit & Status Actions
+        //==========================
+
+//        public Locator btnEdit;
+//        public Locator btnDelete;
+        public Locator btnStatusActive;
+        public Locator btnStatusInactive;
+
+        //==========================
+        // Search & Filter
+        //==========================
+
+        public Locator searchInputField;
+        public Locator noDataMsg;
+
+        //==========================
+        // Grid Elements
+        //==========================
+
+        public Locator customerGridRows;
+        public Locator customerGridHeader;
+        private Page page;
+
+        //==========================
+        // Table Cell Locators
+        //==========================
+
+        // Method to get customer name cell from a specific row
+        public Locator getCustomerNameCell(int rowIndex) {
+            return customerGridRows.nth(rowIndex).locator("td:nth-child(2) a");
+        }
+
+        // Method to get customer code cell from a specific row
+        public Locator getCustomerCodeCell(int rowIndex) {
+            return customerGridRows.nth(rowIndex).locator("td:nth-child(3)");
+        }
+
+        // Method to get status cell from a specific row
+        public Locator getStatusCell(int rowIndex) {
+            return customerGridRows.nth(rowIndex).locator("td:nth-child(6)");
+        }
+
+        // Method to get edit button for a specific row
+        public Locator getEditButton(int rowIndex) {
+            return customerGridRows.nth(rowIndex).locator("svg[aria-label='Edit']");
+        }
+
+        // Method to get delete button for a specific row
+        public Locator getDeleteButton(int rowIndex) {
+            return customerGridRows.nth(rowIndex).locator("svg[aria-label='Delete']");
+
+        }
+
+        // Method to find a row by customer name
+        public Locator getRowByCustomerName(String customerName) {
+            return page.locator("tbody tr:has-text('" + customerName + "')");
+        }
+
+        // Method to find a row by customer code
+        public Locator getRowByCustomerCode(String customerCode) {
+            return page.locator("tbody tr:has-text('" + customerCode + "')");
+        }
+
+    public Locator getCustomerRow(String customerName) {
+
+        return page.locator(
+                "div[data-field='customerName'] span:text-is('" + customerName + "')"
+        );
     }
 }
+
+
+
+
+

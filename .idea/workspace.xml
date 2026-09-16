@@ -3,32 +3,54 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f58cb38-25f1-47fb-b928-ac0598ac3bfa" name="Changes" comment="&quot;Minor changes have been added to the code&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/agents/AIBugAnalyzer.java" afterDir="false" />
+    <list default="true" id="4f58cb38-25f1-47fb-b928-ac0598ac3bfa" name="Changes" comment="ATC ID&#9;Automation Test Case&#9;Status&#9;Framework Features / Implementation&#10;A_TC_001&#9;Login with Valid Credentials&#9;✅ Implemented&#9;TestNG, DataProvider (CSV), Playwright, POM, API Response Validation (/api/login&#10;), Parallel Execution&#10;A_TC_002&#9;Switch to Config Management Module&#9;✅ Implemented&#9;TestNG, Workflow Layer, API + UI Hybrid Validation (/api/users/mappedscopes&#10;A_TC_003&#9;Create Customer Successfully&#9;✅ Implemented&#9;TestNG, Workflow Layer, POM, Random Data Generator, Playwright, API + UI Hybrid Validation, Parallel Execution&#10;A_TC_004&#9;Validate Customer Creation API Response&#9;✅ Implemented&#9;Playwright waitForResponse()&#10;, API Response Validation (POST&#10;/api/customers&#10;), Assertions&#10;A_TC_005&#9;Verify Mandatory Field Validation&#9;✅ Implemented&#9;POM, Locator Repository, TestNG Assertions, Reusable Common Actions">
+      <changelist_data name="MythiliB" email="mythilibekkam@gmail.com" automatic="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saas.zip" beforeDir="false" afterPath="$PROJECT_DIR$/saas.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CSVdatareader/Credentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CSVdatareader/Credentials.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CSVdatareader/Login_Credentials_CSV_Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CSVdatareader/Login_Credentials_CSV_Reader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Samplerun.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Samplerun.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/basefile/URL/launching/Dev1v2_URLlaunching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basefile/URL/launching/Dev1v2_URLlaunching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/basefile/URL/launching/Dev1v2_URLlaunching_Using_SeleniumJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basefile/URL/launching/Dev1v2_URLlaunching_Using_SeleniumJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/agents/AIBugAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/agents/AIBugAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/agents/AIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/agents/AIClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/agents/AIDataAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/agents/AIDataAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/agents/AIReportAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/agents/AIReportAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/agents/AISelfHealingAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/agents/AISelfHealingAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/agents/AIValidationAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/agents/AIValidationAgent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/commonactions/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/commonactions/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pagefile/customers/Customer_Creation_using_Commonactions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pagefile/customers/Customer_Creation_without_Commonactions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/locators/CustomersLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/locators/CustomersLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/locators/LoginLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/locators/LoginLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/AICustomerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/AICustomerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/CustomerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/CustomerData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pagefile/login/Loginpage_usingCommonmethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/login/Loginpage_usingCommonmethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pagefile/login/Loginpage_withoutActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pagefile/projects/Project_Creation_using_Commonactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/projects/Project_Creation_using_Commonactions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pagefile/switchmodules/Swiching_Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagefile/switchmodules/Swiching_Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testfile/CreateCustomerWithCommonMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testfile/CreateCustomer_withoutCommonmethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testdata/CustomerDataFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testdata/CustomerDataFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testfile/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testfile/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testfile/Sitegrouptestfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testfile/Sitegrouptestfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testfile/projectstestfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testfile/projectstestfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/AICustomerDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/AICustomerDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/workflow/CustomersWorkflow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workflow/CustomersWorkflow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-results/traces/trace-1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/test-results/traces/trace-1.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-results/traces/trace-20.zip" beforeDir="false" afterPath="$PROJECT_DIR$/test-results/traces/trace-20.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-results/traces/trace-21.zip" beforeDir="false" afterPath="$PROJECT_DIR$/test-results/traces/trace-21.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-results/traces/trace-22.zip" beforeDir="false" afterPath="$PROJECT_DIR$/test-results/traces/trace-22.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/MythiliB/IdeaProjects/IVIS_SAAS" value="3H4qOl51adxyeFGimoLBqNlg3U4" />
+    </persistenceIdMap>
+  </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="1274" />
+    <option name="cachedIndexableFilesCount" value="1459" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,21 +84,56 @@
     <setting file="file://$PROJECT_DIR$/src/test/java/CSVdatareader/Login_Credentials_CSV_Reader.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/pagefile/customers/Customer_Creation_using_Commonactions.java" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2,
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="2aQruGwdZKY4PLb0KKv3NgtRVyL" />
+  <component name="ProjectSessionTemplates">
+    <option name="inlineTemplate">
+      <template>
+        <option name="modeId" value="InlineAgent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="LOCAL" />
+      </template>
+    </option>
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.AITestCaseGeneratorTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.IPortal_CustomersiteManagement_Playwright [clean...].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -84,22 +141,40 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.AI_Customer_Creation_Test.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.APICustomerTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.BasicpomLogin_UsingSeleniumjava.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/src/test/java/Samplerun.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.C:/Users/MythiliB/IdeaProjects/IVIS_SAAS/src/test/java/Samplerun.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/MythiliB/IdeaProjects/IVIS_SAAS/src/test/java/workflow/Creation.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CreateCustomerWithCommonMethods.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Customer (1).executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Customer.createCustomer.executor&quot;: &quot;Debug&quot;,
     &quot;TestNG.Customer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerDuplicateValidationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerEditTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerSearchTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerSearchTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerSearchTest.editCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerSearchTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerSearchTest.searchCustomer.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.CustomerSearchTest.verifySearchResultCount.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CustomerStatusTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.Customers.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginTest.validateLoginAPI.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MonitoringLevelTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MonitoringLevelTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MonitoringLevelTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Sitegrouptestfile.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.projectstestfile (1).executor&quot;: &quot;Run&quot;,
     &quot;TestNG.projectstestfile.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.projectstestfile.setCreateProject.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.projectstestfile.testCreateCustomer.executor&quot;: &quot;Run&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;MCL1322&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -112,7 +187,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AcpAgentsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -128,8 +203,8 @@
       <recent name="C:\Users\Mythili Bekkam\IdeaProjects\Ivisseleniumpractice\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Customer">
-    <configuration name="APICustomerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CustomerStatusTest">
+    <configuration name="CustomerSearchTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPortal_CustomersiteManagement_Playwright" />
       <extension name="coverage">
         <pattern>
@@ -138,7 +213,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testfile" />
-      <option name="MAIN_CLASS_NAME" value="testfile.APICustomerTest" />
+      <option name="MAIN_CLASS_NAME" value="testfile.CustomerSearchTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -146,17 +221,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/src/test/java/Samplerun.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IPortal_CustomersiteManagement_Playwright" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/Samplerun.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Customer" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPortal_CustomersiteManagement_Playwright" />
       <extension name="coverage">
         <pattern>
@@ -165,7 +230,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testfile" />
-      <option name="MAIN_CLASS_NAME" value="testfile.Customer" />
+      <option name="MAIN_CLASS_NAME" value="testfile.CustomerSearchTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -190,16 +255,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="projectstestfile (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IPortal_CustomersiteManagement_Playwright" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.*" />
+          <option name="PATTERN" value="testfile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.LoginTest" />
+      <option name="PACKAGE_NAME" value="testfile" />
+      <option name="MAIN_CLASS_NAME" value="testfile.projectstestfile" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="projectstestfile" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IPortal_CustomersiteManagement_Playwright" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testfile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testfile" />
+      <option name="MAIN_CLASS_NAME" value="testfile.projectstestfile" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -210,10 +292,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CustomerStatusTest" />
-        <item itemvalue="TestNG.Customer" />
-        <item itemvalue="TestNG.APICustomerTest" />
-        <item itemvalue="TestNG.C:/Users/Mythili Bekkam/IdeaProjects/Ivisseleniumpractice/src/test/java/Samplerun.xml" />
-        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.projectstestfile (1)" />
+        <item itemvalue="TestNG.projectstestfile" />
+        <item itemvalue="TestNG.CustomerSearchTest (1)" />
+        <item itemvalue="TestNG.CustomerSearchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +329,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719491433632</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ATC ID&#9;Automation Test Case&#9;Status&#9;Framework Features / Implementation&#10;A_TC_001&#9;Login with Valid Credentials&#9;✅ Implemented&#9;TestNG, DataProvider (CSV), Playwright, POM, API Response Validation (/api/login&#10;), Parallel Execution&#10;A_TC_002&#9;Switch to Config Management Module&#9;✅ Implemented&#9;TestNG, Workflow Layer, API + UI Hybrid Validation (/api/users/mappedscopes&#10;A_TC_003&#9;Create Customer Successfully&#9;✅ Implemented&#9;TestNG, Workflow Layer, POM, Random Data Generator, Playwright, API + UI Hybrid Validation, Parallel Execution&#10;A_TC_004&#9;Validate Customer Creation API Response&#9;✅ Implemented&#9;Playwright waitForResponse()&#10;, API Response Validation (POST&#10;/api/customers&#10;), Assertions&#10;A_TC_005&#9;Verify Mandatory Field Validation&#9;✅ Implemented&#9;POM, Locator Repository, TestNG Assertions, Reusable Common Actions">
+      <option name="closed" value="true" />
+      <created>1784898654023</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1784898654023</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ATC ID&#9;Automation Test Case&#9;Status&#9;Framework Features / Implementation&#10;A_TC_001&#9;Login with Valid Credentials&#9;✅ Implemented&#9;TestNG, DataProvider (CSV), Playwright, POM, API Response Validation (/api/login&#10;), Parallel Execution&#10;A_TC_002&#9;Switch to Config Management Module&#9;✅ Implemented&#9;TestNG, Workflow Layer, API + UI Hybrid Validation (/api/users/mappedscopes&#10;A_TC_003&#9;Create Customer Successfully&#9;✅ Implemented&#9;TestNG, Workflow Layer, POM, Random Data Generator, Playwright, API + UI Hybrid Validation, Parallel Execution&#10;A_TC_004&#9;Validate Customer Creation API Response&#9;✅ Implemented&#9;Playwright waitForResponse()&#10;, API Response Validation (POST&#10;/api/customers&#10;), Assertions&#10;A_TC_005&#9;Verify Mandatory Field Validation&#9;✅ Implemented&#9;POM, Locator Repository, TestNG Assertions, Reusable Common Actions">
+      <option name="closed" value="true" />
+      <created>1784898926424</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1784898926424</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +366,44 @@
     <MESSAGE value="&quot;sample&quot;" />
     <MESSAGE value="&quot;URL Changed&quot;" />
     <MESSAGE value="&quot;Minor changes have been added to the code&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Minor changes have been added to the code&quot;" />
+    <MESSAGE value="ATC ID&#9;Automation Test Case&#9;Status&#9;Framework Features / Implementation&#10;A_TC_001&#9;Login with Valid Credentials&#9;✅ Implemented&#9;TestNG, DataProvider (CSV), Playwright, POM, API Response Validation (/api/login&#10;), Parallel Execution&#10;A_TC_002&#9;Switch to Config Management Module&#9;✅ Implemented&#9;TestNG, Workflow Layer, API + UI Hybrid Validation (/api/users/mappedscopes&#10;A_TC_003&#9;Create Customer Successfully&#9;✅ Implemented&#9;TestNG, Workflow Layer, POM, Random Data Generator, Playwright, API + UI Hybrid Validation, Parallel Execution&#10;A_TC_004&#9;Validate Customer Creation API Response&#9;✅ Implemented&#9;Playwright waitForResponse()&#10;, API Response Validation (POST&#10;/api/customers&#10;), Assertions&#10;A_TC_005&#9;Verify Mandatory Field Validation&#9;✅ Implemented&#9;POM, Locator Repository, TestNG Assertions, Reusable Common Actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="ATC ID&#9;Automation Test Case&#9;Status&#9;Framework Features / Implementation&#10;A_TC_001&#9;Login with Valid Credentials&#9;✅ Implemented&#9;TestNG, DataProvider (CSV), Playwright, POM, API Response Validation (/api/login&#10;), Parallel Execution&#10;A_TC_002&#9;Switch to Config Management Module&#9;✅ Implemented&#9;TestNG, Workflow Layer, API + UI Hybrid Validation (/api/users/mappedscopes&#10;A_TC_003&#9;Create Customer Successfully&#9;✅ Implemented&#9;TestNG, Workflow Layer, POM, Random Data Generator, Playwright, API + UI Hybrid Validation, Parallel Execution&#10;A_TC_004&#9;Validate Customer Creation API Response&#9;✅ Implemented&#9;Playwright waitForResponse()&#10;, API Response Validation (POST&#10;/api/customers&#10;), Assertions&#10;A_TC_005&#9;Verify Mandatory Field Validation&#9;✅ Implemented&#9;POM, Locator Repository, TestNG Assertions, Reusable Common Actions" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pagefile/projects/ProjectCreation.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pagefile/projects/ProjectCreation.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pagefile/projects/ProjectCreation.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pagefile/projects/ProjectCreation.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pagefile/projects/ProjectCreation.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pagefile/projects/ProjectCreation.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

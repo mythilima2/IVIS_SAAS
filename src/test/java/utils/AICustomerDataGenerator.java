@@ -29,7 +29,6 @@ public class AICustomerDataGenerator {
 
         // Unique Lead Number
         public static String leadNumber() {
-            return "LD" + (100000 + random.nextInt(900000));
-        }
-    }
+            return String.valueOf(100000 + random.nextInt(900000));
+        }    }
 

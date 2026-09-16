@@ -4,83 +4,96 @@ import commonactions.Actions;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
+import locators.ProjectsLocators;
 import org.testng.Assert;
+import utils.CustomerStore;
 
 import java.util.regex.Pattern;
 
 
 public class Project_Creation_using_Commonactions {
-    private final Page page;
-    private final Actions commonMethods;
 
+        private final Page page;
+        private final Actions actions;
+        private final ProjectsLocators project;
 
-      public Project_Creation_using_Commonactions(Page page) {
-        this.page = page;
-        this.commonMethods = new Actions(page);
+        public Project_Creation_using_Commonactions(Page page) {
+
+            this.page = page;
+            this.actions = new Actions(page);
+            this.project = new ProjectsLocators(page);
+        }
+
+        public void create() {
+
+            // Navigate
+            actions.click(project.lnkProjects);
+            actions.waitForLoader();
+
+            actions.click(project.btnAddProject);
+            actions.waitForLoader();
+
+            // Mandatory validations
+            actions.click(project.btnNext);
+
+            Assert.assertEquals(project.txtCustomerValidation.textContent(),
+                    "Please select the Customer Name");
+
+            Assert.assertEquals(project.txtProjectNameValidation.textContent(),
+                    "Please enter the Project Name");
+
+            Assert.assertEquals(project.txtProjectTypeValidation.textContent(),
+                    "Please select the Project Type");
+
+            Assert.assertEquals(project.txtHierarchyValidation.textContent(),
+                    "Please select the Hierarchy");
+
+            // Customer
+            actions.click(project.ddlCustomer);
+            String storedCustomerName = CustomerStore.getCustomerName();
+            if (storedCustomerName == null || storedCustomerName.isBlank()) {
+                throw new RuntimeException("Stored customer name is not available.");
+            }
+            actions.click(page.getByText(storedCustomerName).first());
+
+            // Project Name
+            actions.fill(project.txtProjectName, "Auto purpose project");
+
+            // Project Type
+            actions.click(project.ddlProjectType);
+            actions.click(project.optionProjectType);
+
+            // Hierarchy
+            actions.click(project.txtHierarchy);
+            actions.click(project.optionHierarchy);
+
+            actions.click(project.btnNext);
+
+            // Billing Validation
+            Assert.assertEquals(project.txtBillingCountryValidation.textContent(),
+                    "Please select the Billing Country");
+
+            // Billing Details
+            actions.click(project.ddlBillingCountry);
+            actions.click(project.optionUSA);
+
+            actions.click(project.ddlBillingState);
+            actions.click(project.optionState);
+
+            actions.click(project.ddlBillingCity);
+            actions.click(project.optionCity);
+
+            actions.fill(project.txtBillingZipCode, "454545");
+
+            actions.click(project.btnNext);
+
+            // Create Project
+            actions.click(project.btnCreate);
+
+            actions.waitForLoader();
+
+            actions.click(project.btnClose);
+        }
     }
 
-
-    public void create() throws InterruptedException {
-                page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Projects")).click();
-        page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Projects$"))).locator("svg").nth(2).click();
-                page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Next")).click();
-        String customernamevalidation = page.locator("'Please select the Customer Name'").textContent();
-        // Assert the value using equals
-        Assert.assertEquals("Please select the Customer Name", customernamevalidation);
-        System.out.println(customernamevalidation);
-        String projectnamevalidation = page.locator("'Please enter the Project Name'").textContent();
-        Assert.assertEquals("Please enter the Project Name", projectnamevalidation);
-        System.out.println(projectnamevalidation);
-        String projecttypenamevalidation = page.locator("'Please select the Project Type'").textContent();
-
-        Assert.assertEquals("Please select the Project Type", projecttypenamevalidation);
-        System.out.println(projecttypenamevalidation);
-        String hierarchyMandatoryvalidation = page.locator("'Please select the Hierarchy'").textContent();
-
-        Assert.assertEquals("Please select the Hierarchy", hierarchyMandatoryvalidation);
-        System.out.println(hierarchyMandatoryvalidation);
-                page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^Please select the Customer Name$"))).getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName("Open")).click();
-                page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("ABC Electronics")).click();
-                page.getByPlaceholder("Project Name").click();
-                page.getByPlaceholder("Project Name").fill("fhdyuyygf");
-                page.waitForTimeout(1000);
-        String projectnameUNIQUEvalidation = page.locator("'This project name is already taken'").textContent();
-        Assert.assertEquals("This project name is already taken", projectnameUNIQUEvalidation);
-        System.out.println(projectnameUNIQUEvalidation);
-        page.getByPlaceholder("Project Name").fill("Auto purpose project");
-        Thread.sleep(2000);
-        page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Select Project Type")).click();
-                page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("Money Chest")).click();
-                page.getByPlaceholder("Hierarchy").click();
-                page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("Area").setExact(true)).click();
-        page.locator("//button[normalize-space()='Next']").click();
-        page.locator("'Next'").click();
-        String billingCountrynamevalidation = page.locator("'Please select the Billing Country'").textContent();
-        Assert.assertEquals("Please select the Billing Country", billingCountrynamevalidation);
-        System.out.println(billingCountrynamevalidation);
-//        String billingStatevalidation = page.locator("'Please select the Billing State'").textContent();
-//
-//        Assert.assertEquals("Please select the Billing State", billingStatevalidation);
-//        System.out.println(billingStatevalidation);
-//        String billingCityMandatoryvalidation = page.locator("'Please enter the Billing City'").textContent();
-//
-//        Assert.assertEquals("Please enter the Billing City", billingCityMandatoryvalidation);
-//        System.out.println(billingCityMandatoryvalidation);
-//        String BillingZIPCodeMandatoryvalidation = page.locator("'Please enter the Billing ZIP Code'").textContent();
-//        Assert.assertEquals("Please enter the Billing ZIP Code", BillingZIPCodeMandatoryvalidation);
-//        System.out.println(BillingZIPCodeMandatoryvalidation);
-        page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Next")).click();
-                page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Select Country")).click();
-                page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("United States of America")).click();
-                page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Select State")).click();
-                page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("Delaware (DE)")).click();
-                page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Select City")).click();
-                page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("Lewes")).click();
-                page.getByPlaceholder("Billing ZIP Code").click();
-                page.getByPlaceholder("Billing ZIP Code").fill("454545");
-                page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Next")).click();
-                page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Create")).click();
-                page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("close")).click();
-            }
-        }
 

@@ -23,6 +23,35 @@ public class CustomerDataFactory {
 
         }
 
+        public static CustomerData createValidCustomer(String customerName, String legalName,
+                                                       String country, String industry, String email) {
+
+            return new CustomerData(
+                    customerName,
+                    legalName,
+                    legalName,  // Use legalName as code
+                    country,
+                    industry,
+                    email
+            );
+
+        }
+
+        public static CustomerData createValidCustomer(String customerName, String legalName,
+                                                       String customerCode, String country, 
+                                                       String industry, String email) {
+
+            return new CustomerData(
+                    customerName,
+                    legalName,
+                    customerCode,
+                    country,
+                    industry,
+                    email
+            );
+
+        }
+
         public static CustomerData getEmptyCustomerName() {
 
             return new CustomerData(

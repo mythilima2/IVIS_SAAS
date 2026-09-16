@@ -3,40 +3,36 @@ package workflow;
 //import api.CustomerAPI;
 import com.microsoft.playwright.APIRequestContext;
 import com.microsoft.playwright.Page;
+import model.CustomerData;
 import pagefile.customers.CustomersCreation;
+import testdata.CustomerDataFactory;
+import utils.CustomerStore;
 
 public class CustomersWorkflow {
 
 
         private final CustomersCreation customer;
-//        private final CustomerAPI customerAPI;
 
         public CustomersWorkflow(Page page,
-                                APIRequestContext requestContext) {
+                                 APIRequestContext requestContext) {
 
             customer = new CustomersCreation(page);
-
-//            customerAPI = new CustomerAPI(requestContext);
-
         }
 
-        public void createCustomer(String customerName,
-                                   String customerCode,
-                                   String country,
-                                   String industry,
-                                   String email)
-                throws Exception {
+        public CustomerData createCustomer() throws Exception {
+
+            CustomerData customerData = CustomerDataFactory.getValidCustomer();
 
             customer.openCustomerPage();
 
             customer.validateMandatoryFields();
 
             customer.enterCustomerDetails(
-                    customerName,
-                    customerCode,
-                    country,
-                    industry,
-                    email);
+                    customerData.getCustomerName(),
+                    customerData.getLegalName(),
+                    customerData.getCountry(),
+                    customerData.getIndustry(),
+                    customerData.getEmail());
 
             customer.selectCustomerFeatures();
 
@@ -48,10 +44,13 @@ public class CustomersWorkflow {
 
             customer.submitCustomer();
 
+            System.out.println("=================================");
+            System.out.println("Customer Created Successfully");
+            System.out.println("Customer Name : " + customerData.getCustomerName());
+            System.out.println("Customer Code : " + customerData.getLegalName());
+            System.out.println("=================================");
 
-            // API Validation
-            // customerAPI.validateCustomer(customerCode);
+            return customerData;
 
-        }
-
+    }
 }

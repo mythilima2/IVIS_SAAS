@@ -1,12 +1,18 @@
 package model;
 
 public class AICustomerData {
+
         private String customerName;
         private String legalName;
         private String country;
         private String industry;
         private String email;
         private String phone;
+        private String leadNumber;
+
+        // Default Constructor
+        public AICustomerData() {
+        }
 
         // Parameterized Constructor
         public AICustomerData(String customerName,
@@ -14,7 +20,8 @@ public class AICustomerData {
                               String country,
                               String industry,
                               String email,
-                              String phone) {
+                              String phone,
+                              String leadNumber) {
 
             this.customerName = customerName;
             this.legalName = legalName;
@@ -22,8 +29,10 @@ public class AICustomerData {
             this.industry = industry;
             this.email = email;
             this.phone = phone;
+            this.leadNumber = leadNumber;
         }
 
+        // Customer Name
         public String getCustomerName() {
             return customerName;
         }
@@ -32,6 +41,7 @@ public class AICustomerData {
             this.customerName = customerName;
         }
 
+        // Customer Code (Legal Name)
         public String getLegalName() {
             return legalName;
         }
@@ -40,6 +50,7 @@ public class AICustomerData {
             this.legalName = legalName;
         }
 
+        // Country
         public String getCountry() {
             return country;
         }
@@ -48,6 +59,7 @@ public class AICustomerData {
             this.country = country;
         }
 
+        // Industry
         public String getIndustry() {
             return industry;
         }
@@ -56,6 +68,7 @@ public class AICustomerData {
             this.industry = industry;
         }
 
+        // Email
         public String getEmail() {
             return email;
         }
@@ -64,6 +77,7 @@ public class AICustomerData {
             this.email = email;
         }
 
+        // Phone Number
         public String getPhone() {
             return phone;
         }
@@ -72,5 +86,25 @@ public class AICustomerData {
             this.phone = phone;
         }
 
+        // Lead Number
+        public String getLeadNumber() {
+            return leadNumber;
+        }
 
-}
+        public void setLeadNumber(String leadNumber) {
+            this.leadNumber = leadNumber;
+        }
+
+        @Override
+        public String toString() {
+            return "AICustomerData{" +
+                    "customerName='" + customerName + '\'' +
+                    ", legalName='" + legalName + '\'' +
+                    ", country='" + country + '\'' +
+                    ", industry='" + industry + '\'' +
+                    ", email='" + email + '\'' +
+                    ", phone='" + phone + '\'' +
+                    ", leadNumber='" + leadNumber + '\'' +
+                    '}';
+        }
+    }

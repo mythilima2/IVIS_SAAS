@@ -2,177 +2,149 @@ package agents;
 
 import model.AICustomerData;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Pattern;
-
 public class AIValidationAgent {
 
-        private final List<String> validationErrors = new ArrayList<>();
-
-        // Email Regex
-        private static final Pattern EMAIL_PATTERN =
-                Pattern.compile("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$");
-
-        // 10 Digit Phone
-        private static final Pattern PHONE_PATTERN =
-                Pattern.compile("^[0-9]{10}$");
 
         /**
-         * Validate Customer Data
-         *
-         * @param customer CustomerData object
-         * @return true if validation passed
+         * Validate complete customer object.
          */
-        public boolean validate(AICustomerData customer) {
-
-            validationErrors.clear();
+        public boolean validateCustomer(AICustomerData customer) {
 
             validateCustomerName(customer.getCustomerName());
-            validateCustomerCode(customer.getLegalName());
-            validateCountry(customer.getCountry());
-            validateIndustry(customer.getIndustry());
+            validateLegalName(customer.getLegalName());
             validateEmail(customer.getEmail());
             validatePhone(customer.getPhone());
-            validateLeadNumber(customer.getLeadnumber());
+            validateCountry(customer.getCountry());
+            validateIndustry(customer.getIndustry());
+            validateLeadNumber(customer.getLeadNumber());
 
-            if (validationErrors.isEmpty()) {
+            System.out.println("AI Validation Successful.");
 
-                System.out.println("=================================");
-                System.out.println("AI Validation Successful");
-                System.out.println("=================================");
-
-                return true;
-            }
-
-            System.out.println("=================================");
-            System.out.println("AI Validation Failed");
-            System.out.println("=================================");
-
-            validationErrors.forEach(System.out::println);
-
-            return false;
+            return true;
         }
 
-        //-------------------------------------
-        // Customer Name
-        //-------------------------------------
+        /**
+         * Customer Name Validation
+         */
+        private void validateCustomerName(String customerName) {
 
-        private void validateCustomerName(String value) {
+            if (customerName == null || customerName.trim().isEmpty()) {
 
-            if (value == null || value.trim().isEmpty()) {
+                throw new RuntimeException(
+                        "Customer Name cannot be empty."
+                );
+            }
 
-                validationErrors.add("Customer Name is empty.");
+            if (customerName.length() < 3) {
 
-            } else if (value.length() < 3) {
-
-                validationErrors.add("Customer Name must be at least 3 characters.");
+                throw new RuntimeException(
+                        "Customer Name should contain at least 3 characters."
+                );
             }
         }
 
-        //-------------------------------------
-        // Customer Code
-        //-------------------------------------
+        /**
+         * Customer Code (Legal Name) Validation
+         */
+        private void validateLegalName(String legalName) {
 
-        private void validateCustomerCode(String value) {
+            if (legalName == null || legalName.trim().isEmpty()) {
 
-            if (value == null || value.trim().isEmpty()) {
+                throw new RuntimeException(
+                        "Customer Code cannot be empty."
+                );
+            }
 
-                validationErrors.add("Customer Code is empty.");
+            if (legalName.length() < 3) {
+
+                throw new RuntimeException(
+                        "Customer Code should contain at least 3 characters."
+                );
             }
         }
 
-        //-------------------------------------
-        // Country
-        //-------------------------------------
+        /**
+         * Email Validation
+         */
+        private void validateEmail(String email) {
 
-        private void validateCountry(String value) {
+            if (email == null || email.trim().isEmpty()) {
 
-            if (value == null || value.trim().isEmpty()) {
+                throw new RuntimeException(
+                        "Email cannot be empty."
+                );
+            }
 
-                validationErrors.add("Country is missing.");
+            if (!email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+
+                throw new RuntimeException(
+                        "Invalid Email Address."
+                );
             }
         }
 
-        //-------------------------------------
-        // Industry
-        //-------------------------------------
+        /**
+         * Phone Number Validation
+         */
+        private void validatePhone(String phone) {
 
-        private void validateIndustry(String value) {
+            if (phone == null || phone.trim().isEmpty()) {
 
-            if (value == null || value.trim().isEmpty()) {
+                throw new RuntimeException(
+                        "Phone Number cannot be empty."
+                );
+            }
 
-                validationErrors.add("Industry is missing.");
+            if (!phone.matches("\\d{10}")) {
+
+                throw new RuntimeException(
+                        "Phone Number must contain exactly 10 digits."
+                );
             }
         }
 
-        //-------------------------------------
-        // Email
-        //-------------------------------------
+        /**
+         * Country Validation
+         */
+        private void validateCountry(String country) {
 
-        private void validateEmail(String value) {
+            if (country == null || country.trim().isEmpty()) {
 
-            if (value == null || value.trim().isEmpty()) {
-
-                validationErrors.add("Email is empty.");
-
-            } else if (!EMAIL_PATTERN.matcher(value).matches()) {
-
-                validationErrors.add("Invalid Email Format.");
+                throw new RuntimeException(
+                        "Country cannot be empty."
+                );
             }
         }
 
-        //-------------------------------------
-        // Phone
-        //-------------------------------------
+        /**
+         * Industry Validation
+         */
+        private void validateIndustry(String industry) {
 
-        private void validatePhone(String value) {
+            if (industry == null || industry.trim().isEmpty()) {
 
-            if (value == null || value.trim().isEmpty()) {
-
-                validationErrors.add("Phone Number is empty.");
-
-            } else if (!PHONE_PATTERN.matcher(value).matches()) {
-
-                validationErrors.add("Phone Number should contain exactly 10 digits.");
+                throw new RuntimeException(
+                        "Industry cannot be empty."
+                );
             }
         }
 
-        //-------------------------------------
-        // Lead Number
-        //-------------------------------------
+        /**
+         * Lead Number Validation
+         */
+        private void validateLeadNumber(String leadNumber) {
 
-        private void validateLeadNumber(String value) {
+            if (leadNumber == null || leadNumber.trim().isEmpty()) {
 
-            if (value == null || value.trim().isEmpty()) {
-
-                validationErrors.add("Lead Number is empty.");
-            }
-        }
-
-        //-------------------------------------
-        // Get Errors
-        //-------------------------------------
-
-        public List<String> getValidationErrors() {
-
-            return validationErrors;
-        }
-
-        //-------------------------------------
-        // Print Errors
-        //-------------------------------------
-
-        public void printValidationErrors() {
-
-            if (validationErrors.isEmpty()) {
-
-                System.out.println("No Validation Errors.");
-
-            } else {
-
-                validationErrors.forEach(System.out::println);
+                throw new RuntimeException(
+                        "Lead Number cannot be empty."
+                );
             }
 
-    }
+            if (!leadNumber.matches("^\\d+$")) {
+                throw new RuntimeException(
+                        "Invalid Lead Number format."
+                );
+            }
+        }
 }

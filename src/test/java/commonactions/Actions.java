@@ -251,4 +251,11 @@ public class Actions {
 
     }
 
+    public void clear(Locator locator) {
+
+        waitForVisible(locator);
+
+        locator.clear();
+
+        }
 }

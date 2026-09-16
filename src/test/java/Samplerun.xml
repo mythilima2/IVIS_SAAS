@@ -6,7 +6,7 @@
                 <parameter name="environment" value="uat"/>
         </parameter>
         <classes>
-                <class name="testfile.Customer">
+                <class name="testfile.CustomerSearchTest">
                 <methods>
                     <include name="getLoginCredentials"/>
                     <include name="login"/>
@@ -39,7 +39,7 @@
         </parameter>
         <classes>
 
-            <class name="testfile.Customer">
+            <class name="testfile.CustomerSearchTest">
                 <methods>
                     <include name="getLoginCredentials"/>
                     <include name="login"/>
@@ -57,7 +57,7 @@
         </parameter>
         <classes>
 
-            <class name="testfile.Customer">
+            <class name="testfile.CustomerSearchTest">
                 <methods>
                     <include name="getLoginCredentials"/>
                     <include name="login"/>
@@ -75,7 +75,7 @@
 
         </parameter>
         <classes>
-          <class name="testfile.Customer">
+          <class name="testfile.CustomerSearchTest">
                 <methods>
                     <include name="getLoginCredentials"/>
                     <include name="login"/>
@@ -91,12 +91,15 @@
 
         </parameter>
         <classes>
-            <class name="testfile.Customer">
+            <class name="testfile.CustomerSearchTest">
                 <methods>
                     <include name="getLoginCredentials"/>
                     <include name="login"/>
                     <include name="switchModule"/>
                     <include name="createCustomer"/>
+<!--                    <include name="searchCustomer"/>-->
+<!--                    <include name="editCustomer"/>-->
+<!--"-->
                 </methods>
             </class>
         </classes>

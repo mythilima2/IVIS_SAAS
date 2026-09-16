@@ -1,27 +1,42 @@
 package agents;
 
+import model.AICustomerData;
 import model.CustomerData;
+import utils.AICustomerDataGenerator;
 import utils.RandomDataGenerator;
 
 public class AIDataAgent {
 
 
 
-        public CustomerData generateCustomer() {
 
-            return new CustomerData(
+        public AICustomerData generateCustomer() {
 
-                    RandomDataGenerator.customerName(),
+                AICustomerData customer = new AICustomerData();
 
-                    RandomDataGenerator.legalName(),
+            customer.setCustomerName(
+                    AICustomerDataGenerator.customerName());
 
-                    "United States of America",
+            customer.setLegalName(
+                    AICustomerDataGenerator.legalName());
 
-                    "ATM",
+            customer.setCountry(
+                    "United States of America");
 
-                    RandomDataGenerator.email()
+            customer.setIndustry(
+                    "ATM");
 
-            );
+            customer.setEmail(
+                    AICustomerDataGenerator.email());
+
+            customer.setPhone(
+                    AICustomerDataGenerator.phoneNumber());
+
+            customer.setLeadNumber(
+                    AICustomerDataGenerator.leadNumber());
+
+            return customer;
         }
+    }
 
-}
+
